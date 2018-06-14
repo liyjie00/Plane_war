@@ -185,13 +185,13 @@ def main():
         key_control(hero, key_state)
 
         # keyboard control
-        for direction in range(4):
-            if key_state[direction] == 1:
-                hero.move(direction)
+        # for direction in range(4):
+        #     if key_state[direction] == 1:
+        #         hero.move(direction)
 
         # mouse control
-        # if key_state[4] == 1:
-        #     hero.move()
+        if key_state[4] == 1:
+            hero.move()
 
         if timer % 9 == 0:
             hero.fire()
