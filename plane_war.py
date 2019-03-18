@@ -47,7 +47,7 @@ class Plane(BasePlane):
     # mouse control
     def move(self):
         self.x, self.y = pygame.mouse.get_pos()
-        # 获取鼠标位置
+        # fetch the coordinates of the mouse
         self.x -= self.image.get_width() / 2
         self.y -= self.image.get_height() / 2
 
